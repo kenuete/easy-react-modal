@@ -1,0 +1,5 @@
+
+{
+    "presets": ["env", "react", "babel-polyfill"],
+    "plugins": ["transform-object-rest-spread", "react-hot-loader/babel"]
+}

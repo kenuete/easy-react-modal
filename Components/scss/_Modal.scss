@@ -1,0 +1,67 @@
+.ui-dialog {overflow: initial}
+.framework-popup {
+    z-index: 1004;
+    .framework-popup-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        opacity: 0.95;
+        padding-bottom: 100px;
+        z-index: 110;
+    }
+
+    .framework-popup-container-wrapper {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 111;
+        -webkit-overflow-scrolling: touch;
+        overflow: scroll;
+    }
+
+    .framework-popup-container {
+        background: white;
+        opacity: 1;
+        margin: auto;
+        z-index: 1004;
+        display: block;
+        position: relative;
+        top: 10%;
+        max-width: 95%;
+        width: 470px;
+        min-height: 50px;
+        overflow: auto;
+        margin-bottom: 275px;
+        transition: all 1000ms ease-out;
+        padding-bottom: 52px;
+        .framework-popup-close {
+            position: absolute;
+            right: 15px;
+            top: 17px;
+            font-size: 20px;
+        }
+
+        .framework-popup-close:before {
+                content: "\2715";
+                cursor: pointer;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+        }
+        
+}
+  
+    .framework-popup-appear {
+        
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
